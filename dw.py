@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = r"C:\Users\omarb\Downloads\Superstore.csv"
+file_path = r"Path\Superstore.csv"
 data = pd.read_csv(file_path, encoding="latin1")
 
 data['Order Date'] = pd.to_datetime(data['Order Date'], format='%d-%m-%Y', errors='coerce')
